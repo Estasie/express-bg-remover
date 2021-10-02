@@ -4,13 +4,14 @@ const express = require('express');
 const { PORT, imgFolder } = require('./config');
 const multer = require('multer');
 const { idGenerator } = require("./utils/idGenerator");
+const {nanoid} = require('nanoid');
 
 const storage = multer.diskStorage({
 	destination: function (req, file, cb) {
 		cb(null, imgFolder);
 	},
 	filename: function (req, file, cb) {
-		imageId = idGenerator();
+		imageId = nanoid();
 		file.imageId = imageId;
 		cb(null, `${imageId}.${file.mimetype.split('/')[1]}`);
 	},

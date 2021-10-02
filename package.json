@@ -16,8 +16,9 @@
 	},
 	"dependencies": {
 		"backrem": "^1.1.0",
-		"multer": "^1.4.3",
 		"express": "^4.17.1",
+		"multer": "^1.4.3",
+		"nanoid": "^3.1.28",
 		"uuid": "^8.3.2"
 	}
 }
