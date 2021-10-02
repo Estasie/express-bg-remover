@@ -56,7 +56,7 @@ class Database extends EventEmitter {
 		}
 
 		const img = new Img(imgRaw.id, imgRaw.mimetype, imgRaw.size, imgRaw.createdAt);
-
+		
 		return img;
 	}
 

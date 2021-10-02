@@ -3,7 +3,6 @@ const api = require('./controllers');
 const express = require('express');
 const { PORT, imgFolder } = require('./config');
 const multer = require('multer');
-const { idGenerator } = require("./utils/idGenerator");
 const {nanoid} = require('nanoid');
 
 const storage = multer.diskStorage({
